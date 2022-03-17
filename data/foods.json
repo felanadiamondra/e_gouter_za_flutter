@@ -1,0 +1,42 @@
+[
+    {
+        "id" : "f1",
+        "name" : "Pizza",
+        "descri" : "jdfkdfjhjhfjghdjhjdfjhfdc fkkdlfflgldkgl fdkfdlfksdmlfkdmlsfsdmlfkdsmdfksmfsdl",
+        "price" : 10000,
+        "resto" : "Gastro",
+        "url" : "images/gastro/logo.png"
+    },
+    {
+        "id" : "f2",
+        "name" : "Sambos",
+        "descri" : "jdfkdfjhjhfjghdjhjdfjhfdc fkkdlfflgldkgl fdkfdlfksdmlfkdmlsfsdmlfkdsmdfksmfsdl",
+        "price" : 20000,
+        "resto" : "Extra",
+        "url" : "images/gastro/logo.png"
+    },
+    {
+        "id" : "f3",
+        "name" : "Sandwich",
+        "descri" : "jdfkdfjhjhfjghdjhjdfjhfdc fkkdlfflgldkgl fdkfdlfksdmlfkdmlsfsdmlfkdsmdfksmfsdl",
+        "price" : 15000,
+        "resto" : "Gastro",
+        "url" : "images/gastro/logo.png"
+    },
+    {
+        "id" : "f4",
+        "name" : "Burger",
+        "descri" : "jdfkdfjhjhfjghdjhjdfjhfdc fkkdlfflgldkgl fdkfdlfksdmlfkdmlsfsdmlfkdsmdfksmfsdl",
+        "price" : 8000,
+        "resto" : "Gastro",
+        "url":"images/gastro/logo.png"
+    },
+    {
+        "id" : "f5",
+        "name" : "Frite",
+        "descri" : "jdfkdfjhjhfjghdjhjdfjhfdc fkkdlfflgldkgl fdkfdlfksdmlfkdmlsfsdmlfkdsmdfksmfsdl",
+        "price" : 13000,
+        "resto" : "Extra",
+        "url" : "images/gastro/logo.png"
+    }
+]
