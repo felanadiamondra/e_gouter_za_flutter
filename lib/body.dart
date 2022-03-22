@@ -2,10 +2,12 @@
 
 import 'dart:async';
 
+import 'package:e_gouter_za/api/fastfood_api.dart';
 import 'package:e_gouter_za/api/food_api.dart';
 import 'package:e_gouter_za/fast_food/fast_food_item.dart';
 import 'package:e_gouter_za/food_page/food_details.dart';
 import 'package:e_gouter_za/model/food.dart';
+import 'package:e_gouter_za/model/restaurant.dart';
 import 'package:e_gouter_za/search_food_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +20,7 @@ class Body extends StatefulWidget {
 
 class _BodyState extends State<Body> {
   List<Food> foods = [];
+  List<Restaurant> restos = [];
   String query = '';
   Timer? debouncer;
 
@@ -45,6 +48,11 @@ class _BodyState extends State<Body> {
     setState(() {
       this.foods = foods;
     });
+
+    final restos = await FastFoodApi.getAllFastfood();
+    setState(() {
+      this.restos = restos;
+    });
   }
 
   // Future searchFood(String query) async{
@@ -70,7 +78,7 @@ class _BodyState extends State<Body> {
   Widget buildSearch() => SearchFoodWidget(
       text: query, onChanged: searchFood, hintText: "Search foods");
 
-  Widget buildFastFood() => FastFood();
+  Widget buildFastFood(Restaurant resto) => FastFood();
 
   Widget buildFood(Food food) => ListTile(
         onTap: () => Navigator.of(context).push(MaterialPageRoute(
@@ -83,16 +91,30 @@ class _BodyState extends State<Body> {
       );
 
   //Add to cart
-  void addItem(Food food) {
-  
-  }
+  void addItem(Food food) {}
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
+        // buildFastFood(),
+        Expanded(
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+                itemCount: restos.length,
+                itemBuilder: (context, index) {
+                  final resto = restos[index];
+                  return Container(
+                    width: 100,
+                    height: 100,
+                    child: Column(
+                      children: [
+                        Image.asset(resto.logourl)
+                      ],
+                    ),
+                  );
+                })),
         buildSearch(),
-        buildFastFood(),
         Expanded(
           child: ListView.builder(
             itemCount: foods.length,

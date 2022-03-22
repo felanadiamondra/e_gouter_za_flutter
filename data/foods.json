@@ -4,7 +4,7 @@
         "name" : "Pizza",
         "descri" : "jdfkdfjhjhfjghdjhjdfjhfdc fkkdlfflgldkgl fdkfdlfksdmlfkdmlsfsdmlfkdsmdfksmfsdl",
         "price" : 10000,
-        "resto" : "Gastro",
+        "resto" : "La gastronomie pizza",
         "url" : "images/gastro/logo.png",
         "idOrdered" : false
     },
@@ -13,7 +13,7 @@
         "name" : "Sambos",
         "descri" : "jdfkdfjhjhfjghdjhjdfjhfdc fkkdlfflgldkgl fdkfdlfksdmlfkdmlsfsdmlfkdsmdfksmfsdl",
         "price" : 20000,
-        "resto" : "Extra",
+        "resto" : "Extra pizza",
         "url" : "images/gastro/logo.png",
         "isOrdered": false
     },
@@ -22,7 +22,7 @@
         "name" : "Sandwich",
         "descri" : "jdfkdfjhjhfjghdjhjdfjhfdc fkkdlfflgldkgl fdkfdlfksdmlfkdmlsfsdmlfkdsmdfksmfsdl",
         "price" : 15000,
-        "resto" : "Gastro",
+        "resto" : "La gastronomie pizza",
         "url" : "images/gastro/logo.png",
         "isOrdered": false
     },
@@ -31,7 +31,7 @@
         "name" : "Burger",
         "descri" : "jdfkdfjhjhfjghdjhjdfjhfdc fkkdlfflgldkgl fdkfdlfksdmlfkdmlsfsdmlfkdsmdfksmfsdl",
         "price" : 8000,
-        "resto" : "Gastro",
+        "resto" : "La gastronomie pizza",
         "url":"images/gastro/logo.png",
         "idOrdered": false
     },
@@ -40,7 +40,7 @@
         "name" : "Frite",
         "descri" : "jdfkdfjhjhfjghdjhjdfjhfdc fkkdlfflgldkgl fdkfdlfksdmlfkdmlsfsdmlfkdsmdfksmfsdl",
         "price" : 13000,
-        "resto" : "Extra",
+        "resto" : "Extra pizza",
         "url" : "images/gastro/logo.png",
         "idOrdered":false
     }

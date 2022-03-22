@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:e_gouter_za/body.dart';
 import 'package:e_gouter_za/menu/food_order.dart';
 import 'package:e_gouter_za/navigation_drawer.dart';
@@ -13,10 +14,23 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("E' GOUTER ZA"),
         actions:<Widget>[
-          IconButton(
+          Badge(
+            position: BadgePosition(top: 0, end: 1),
+            animationDuration: Duration(milliseconds: 200),
+            animationType: BadgeAnimationType.scale,
+            showBadge: true,
+            badgeColor: Colors.red,
+            badgeContent: Text(
+              '0', style: TextStyle(
+                color: Colors.white
+              ),
+            ),
+            child: IconButton(
             onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => FoodOrder())),
             icon: Icon(Icons.shopping_cart),
            ),
+          ),
+          SizedBox(width: 20,)
         ],
       ),
       body: const Body()

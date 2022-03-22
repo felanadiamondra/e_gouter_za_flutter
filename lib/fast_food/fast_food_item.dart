@@ -1,3 +1,5 @@
+import 'package:e_gouter_za/api/fastfood_api.dart';
+import 'package:e_gouter_za/model/restaurant.dart';
 import 'package:flutter/material.dart';
 
 class FastFood extends StatefulWidget {
@@ -8,37 +10,37 @@ class FastFood extends StatefulWidget {
 }
 
 class _FastFoodState extends State<FastFood> {
-  Widget categoriesFastFood({required String image, required String name}) {
-    return Column(
-      children: [
-        Container(
-          margin: EdgeInsets.only(left: 10),
-          height: 100,
-          width: 80,
-          decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage(image)),
-              color: Colors.white70,
-              borderRadius: BorderRadius.circular(30)),
-        )
-      ],
-    );
+  List<Restaurant> restos = [];
+
+  Future init() async {
+    final allresto = await FastFoodApi.getAllFastfood();
+    setState(() {
+      restos = allresto;
+    });
   }
+
+  Widget buildFastFoodItem(Restaurant resto) => Container(
+        width: 100,
+        height: 100,
+        child: Column(
+          children: <Widget>[
+            Image.asset(resto.logourl),
+            Text(resto.name)
+            ],
+        ),
+      );
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Row(
-        children: [
-          categoriesFastFood(
-              image: "images/gastro/logo.png", name: "Gastro"),
-          categoriesFastFood(
-              image: "images/extra/extra.jpg", name: "Extra"),
-          categoriesFastFood(
-              image: "images/extra/extra.jpg", name: "Happy King"),
-          categoriesFastFood(image: "images/kfc/kfc.png", name: "Kfc"),
-        ],
-      ),
+    return Container(
+      height: 150,
+      child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          itemCount: restos.length,
+          itemBuilder: (context, index) {
+            final resto = restos[index];
+            return buildFastFoodItem(resto);
+          }),
     );
   }
 }

@@ -1,0 +1,26 @@
+[
+    {
+        "id" : "r1",
+        "name" : "La gastronomie pizza",
+        "logourl" : "images/gastro/new-logo.png",
+        "backgroundurl" : ""
+    },
+    {
+        "id" : "r2",
+        "name" : "Extra pizza",
+        "logourl" : "images/extra/extra.jpg",
+        "backgroundurl" : ""
+    },
+    {
+        "id" : "r3",
+        "name" : "Happy king",
+        "logourl" : "images/kfc/logo.png",
+        "backgroundurl" : ""
+    },
+    {
+        "id" : "r4",
+        "name" : "Kfc",
+        "logourl" : "images/kfc/logo.png",
+        "backgroundurl" : ""
+    }
+]
