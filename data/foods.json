@@ -5,7 +5,8 @@
         "descri" : "jdfkdfjhjhfjghdjhjdfjhfdc fkkdlfflgldkgl fdkfdlfksdmlfkdmlsfsdmlfkdsmdfksmfsdl",
         "price" : 10000,
         "resto" : "Gastro",
-        "url" : "images/gastro/logo.png"
+        "url" : "images/gastro/logo.png",
+        "idOrdered" : false
     },
     {
         "id" : "f2",
@@ -13,7 +14,8 @@
         "descri" : "jdfkdfjhjhfjghdjhjdfjhfdc fkkdlfflgldkgl fdkfdlfksdmlfkdmlsfsdmlfkdsmdfksmfsdl",
         "price" : 20000,
         "resto" : "Extra",
-        "url" : "images/gastro/logo.png"
+        "url" : "images/gastro/logo.png",
+        "isOrdered": false
     },
     {
         "id" : "f3",
@@ -21,7 +23,8 @@
         "descri" : "jdfkdfjhjhfjghdjhjdfjhfdc fkkdlfflgldkgl fdkfdlfksdmlfkdmlsfsdmlfkdsmdfksmfsdl",
         "price" : 15000,
         "resto" : "Gastro",
-        "url" : "images/gastro/logo.png"
+        "url" : "images/gastro/logo.png",
+        "isOrdered": false
     },
     {
         "id" : "f4",
@@ -29,7 +32,8 @@
         "descri" : "jdfkdfjhjhfjghdjhjdfjhfdc fkkdlfflgldkgl fdkfdlfksdmlfkdmlsfsdmlfkdsmdfksmfsdl",
         "price" : 8000,
         "resto" : "Gastro",
-        "url":"images/gastro/logo.png"
+        "url":"images/gastro/logo.png",
+        "idOrdered": false
     },
     {
         "id" : "f5",
@@ -37,6 +41,7 @@
         "descri" : "jdfkdfjhjhfjghdjhjdfjhfdc fkkdlfflgldkgl fdkfdlfksdmlfkdmlsfsdmlfkdsmdfksmfsdl",
         "price" : 13000,
         "resto" : "Extra",
-        "url" : "images/gastro/logo.png"
+        "url" : "images/gastro/logo.png",
+        "idOrdered":false
     }
 ]
