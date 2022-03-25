@@ -38,7 +38,7 @@ class _ListFoodPageState extends State<ListFoodPage> {
   }
 
   Future init() async {
-    final foods = await FoodApi.fetchFoods(query);
+    final foods = await FoodApi.fetchFoodsByRes("La gastronomie pizza",query);
     setState(() {
       this.foods = foods;
     });

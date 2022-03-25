@@ -1,5 +1,6 @@
 import 'package:badges/badges.dart';
 import 'package:e_gouter_za/body.dart';
+import 'package:e_gouter_za/cart_page/cart_screen.dart';
 import 'package:e_gouter_za/menu/commande.dart';
 import 'package:e_gouter_za/navigation_drawer.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +27,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
             child: IconButton(
-            onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => Commande())),
+            onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => CartScreen())),
             icon: Icon(Icons.shopping_cart),
            ),
           ),

@@ -19,9 +19,9 @@ class FoodApi {
     final List foods = json.decode(jsonfood);
     return foods.map((json) => Food.fromJson(json)).where((food) {
       //convert into Book object
-      final nameLower = food.resto.toLowerCase();
+      final restoLower = food.resto.toLowerCase();
       final resLower = restaurant.toLowerCase();
-      return nameLower.contains(resLower);
+      return restoLower.contains(resLower);
     }).toList();
   }
 }
