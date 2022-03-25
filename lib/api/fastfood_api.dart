@@ -9,4 +9,5 @@ class FastFoodApi {
     final List fastfood = json.decode(jsonfastfood);
     return fastfood.map((json) => Restaurant.fromJson(json)).toList();
   }
+
 }

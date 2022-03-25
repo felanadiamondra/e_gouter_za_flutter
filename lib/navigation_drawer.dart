@@ -1,5 +1,5 @@
 import 'package:e_gouter_za/home_page.dart';
-import 'package:e_gouter_za/menu/commande.dart';
+import 'package:e_gouter_za/menu/food_order.dart';
 import 'package:flutter/material.dart';
 
 class NavigationDrawer extends StatelessWidget {
@@ -56,7 +56,7 @@ class NavigationDrawer extends StatelessWidget {
         break;
       case 1:
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => Commande(),
+          builder: (context) => FoodOrder(),
         ));
     }
   }

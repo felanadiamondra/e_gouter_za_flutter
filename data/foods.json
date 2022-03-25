@@ -1,47 +1,74 @@
 [
     {
         "id" : "f1",
-        "name" : "Pizza",
-        "descri" : "jdfkdfjhjhfjghdjhjdfjhfdc fkkdlfflgldkgl fdkfdlfksdmlfkdmlsfsdmlfkdsmdfksmfsdl",
+        "name" : "Hamburger + Frites",
+        "descri" : "",
         "price" : 10000,
-        "resto" : "La gastronomie pizza",
-        "url" : "images/gastro/logo.png",
-        "idOrdered" : false
+        "resto" : "Extra pizza",
+        "url" : "images/extra/hamburgerfrite.jpg"
     },
     {
         "id" : "f2",
-        "name" : "Sambos",
-        "descri" : "jdfkdfjhjhfjghdjhjdfjhfdc fkkdlfflgldkgl fdkfdlfksdmlfkdmlsfsdmlfkdsmdfksmfsdl",
-        "price" : 20000,
-        "resto" : "Extra pizza",
-        "url" : "images/gastro/logo.png",
-        "isOrdered": false
+        "name" : "Sandwich",
+        "descri" : "",
+        "price" : 10000,
+        "resto" : "La gastronomie pizza",
+        "url" : "images/gastro/sandwich.png"
     },
     {
         "id" : "f3",
-        "name" : "Sandwich",
-        "descri" : "jdfkdfjhjhfjghdjhjdfjhfdc fkkdlfflgldkgl fdkfdlfksdmlfkdmlsfsdmlfkdsmdfksmfsdl",
+        "name" : "Hamburger",
+        "descri" : "",
         "price" : 15000,
         "resto" : "La gastronomie pizza",
-        "url" : "images/gastro/logo.png",
-        "isOrdered": false
+        "url" : "images/gastro/hamburger.png"
     },
     {
         "id" : "f4",
-        "name" : "Burger",
-        "descri" : "jdfkdfjhjhfjghdjhjdfjhfdc fkkdlfflgldkgl fdkfdlfksdmlfkdmlsfsdmlfkdsmdfksmfsdl",
-        "price" : 8000,
-        "resto" : "La gastronomie pizza",
-        "url":"images/gastro/logo.png",
-        "idOrdered": false
+        "name" : "Baguepi",
+        "descri" : "Une baguette pizza vous offre plus de saveur avec les viandes au dessus agrémenter de son fromage gratiné.",
+        "price" : 5000,
+        "resto" : "Extra pizza",
+        "url":"images/extra/baguepi.jpg"
     },
     {
         "id" : "f5",
-        "name" : "Frite",
-        "descri" : "jdfkdfjhjhfjghdjhjdfjhfdc fkkdlfflgldkgl fdkfdlfksdmlfkdmlsfsdmlfkdsmdfksmfsdl",
+        "name" : "Frites",
+        "descri" : "",
         "price" : 13000,
-        "resto" : "Extra pizza",
-        "url" : "images/gastro/logo.png",
-        "idOrdered":false
+        "resto" : "La gastronomie pizza",
+        "url" : "images/gastro/frites.png"
+    },
+    {
+        "id" : "f6",
+        "name" : "Burger",
+        "descri" : "",
+        "price" : 13000,
+        "resto" : "Happy king",
+        "url" : "images/happyking/burger.jpg"
+    },
+    {
+        "id" : "f7",
+        "name" : "Double down",
+        "descri" : "Double down Double plaisir en bouche avec notre nouveau produit, le DOUBLE DOWN!",
+        "price" : 16000,
+        "resto" : "Kfc",
+        "url" : "images/kfc/double.jpg"
+    },
+    {
+        "id" : "f8",
+        "name" : "Frites",
+        "descri" : "",
+        "price" : 16000,
+        "resto" : "Kfc",
+        "url" : "images/Kfc/Kfc.jpg"
+    },
+    {
+        "id" : "f9",
+        "name" : "Riz",
+        "descri" : "",
+        "price" : 16000,
+        "resto" : "Happy king",
+        "url" : "images/happyking/riz.jpg"
     }
 ]

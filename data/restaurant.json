@@ -3,24 +3,28 @@
         "id" : "r1",
         "name" : "La gastronomie pizza",
         "logourl" : "images/gastro/new-logo.png",
-        "backgroundurl" : ""
+        "backgroundurl" : "",
+        "pointdevente" : ["Mahazo", "Analamahitsy", "Talatamaty", "Ivato"]
     },
     {
         "id" : "r2",
         "name" : "Extra pizza",
         "logourl" : "images/extra/extra.jpg",
-        "backgroundurl" : ""
+        "backgroundurl" : "",
+        "pointdevente" : ["Mahazo", "Analamahitsy","Talatamaty","Ivato"]
     },
     {
         "id" : "r3",
         "name" : "Happy king",
-        "logourl" : "images/kfc/logo.png",
-        "backgroundurl" : ""
+        "logourl" : "images/happyking/logo.jpg",
+        "backgroundurl" : "",
+        "pointdevente" : ["Behoririka"]
     },
     {
         "id" : "r4",
         "name" : "Kfc",
         "logourl" : "images/kfc/logo.png",
-        "backgroundurl" : ""
+        "backgroundurl" : "",
+        "pointdevente" : ["Ambodivona"]
     }
 ]

@@ -13,4 +13,15 @@ class FoodApi {
       return nameLower.contains(queryLower);
     }).toList();
   }
+
+  static Future<List<Food>> fetchFoodsByRes(String restaurant, String query) async {
+    final jsonfood = await rootBundle.rootBundle.loadString('data/foods.json');
+    final List foods = json.decode(jsonfood);
+    return foods.map((json) => Food.fromJson(json)).where((food) {
+      //convert into Book object
+      final nameLower = food.resto.toLowerCase();
+      final resLower = restaurant.toLowerCase();
+      return nameLower.contains(resLower);
+    }).toList();
+  }
 }

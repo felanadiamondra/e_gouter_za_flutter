@@ -1,4 +1,5 @@
-import 'package:e_gouter_za/model/cart.dart';
+import 'package:e_gouter_za/model/card.dart';
+import 'package:e_gouter_za/model/cart_provider.dart';
 import 'package:e_gouter_za/model/food.dart';
 import 'package:flutter/material.dart';
 

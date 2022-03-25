@@ -5,6 +5,7 @@ import 'dart:async';
 import 'package:e_gouter_za/api/fastfood_api.dart';
 import 'package:e_gouter_za/api/food_api.dart';
 import 'package:e_gouter_za/fast_food/fast_food_item.dart';
+import 'package:e_gouter_za/fast_food/fast_food_page.dart';
 import 'package:e_gouter_za/food_page/food_details.dart';
 import 'package:e_gouter_za/model/food.dart';
 import 'package:e_gouter_za/model/restaurant.dart';
@@ -109,7 +110,19 @@ class _BodyState extends State<Body> {
                     height: 100,
                     child: Column(
                       children: [
-                        Image.asset(resto.logourl)
+                        Expanded(
+                          child: AspectRatio(
+                            aspectRatio: 4/3, 
+                            child: Material(
+                              child: Ink.image(
+                                image: AssetImage(resto.logourl),
+                                child: InkWell(
+                                  onTap: ()=> Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => FastFoodPage())),
+                                ),
+                                )
+                              ),
+                            )
+                          )
                       ],
                     ),
                   );
