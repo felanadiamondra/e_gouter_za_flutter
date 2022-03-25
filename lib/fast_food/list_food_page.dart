@@ -2,9 +2,11 @@ import 'dart:async';
 
 import 'package:e_gouter_za/api/food_api.dart';
 import 'package:e_gouter_za/food_page/food_details.dart';
+import 'package:e_gouter_za/model/cart_bloc.dart';
 import 'package:e_gouter_za/model/food.dart';
 import 'package:e_gouter_za/search_food_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ListFoodPage extends StatefulWidget {
   final String resto;
@@ -61,7 +63,18 @@ class _ListFoodPageState extends State<ListFoodPage> {
             SizedBox(height: 80.0, width: 90.0, child: Image.asset(food.url)),
         title: Text(food.name),
         subtitle: Text(food.price.toString() + "Ar"),
-        trailing: Text('Add to cart'),
+        trailing: BlocBuilder<CartBloc, CartState>(
+                      builder: (context, state) {
+                    return IconButton(
+                      icon: Icon(Icons.add_circle_rounded),
+                      onPressed: () {
+                        context.read<CartBloc>().add(CartFoodAdded(food));
+                        final snackbar =
+                            SnackBar(content: Text("Produit commandé"));
+                        ScaffoldMessenger.of(context).showSnackBar(snackbar);
+                      },
+                    );
+                  })
       );
 
   Widget buildSearch() => SearchFoodWidget(

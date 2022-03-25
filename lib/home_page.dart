@@ -15,22 +15,10 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("E' GOUTER ZA"),
         actions:<Widget>[
-          Badge(
-            position: BadgePosition(top: 0, end: 1),
-            animationDuration: Duration(milliseconds: 200),
-            animationType: BadgeAnimationType.scale,
-            showBadge: true,
-            badgeColor: Colors.red,
-            badgeContent: Text(
-              '0', style: TextStyle(
-                color: Colors.white
-              ),
-            ),
-            child: IconButton(
-            onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => CartScreen())),
-            icon: Icon(Icons.shopping_cart),
+          IconButton(
+          onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => CartScreen())),
+          icon: Icon(Icons.shopping_cart),
            ),
-          ),
           SizedBox(width: 20,)
         ],
       ),

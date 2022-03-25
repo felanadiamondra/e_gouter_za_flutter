@@ -130,7 +130,7 @@ class _BodyState extends State<Body> {
                               child: Ink.image(
                                 image: AssetImage(resto.logourl),
                                 child: InkWell(
-                                  onTap: ()=> Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => FastFoodPage())),
+                                  onTap: ()=> Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => FastFoodPage(resto: resto,))),
                                 ),
                                 )
                               ),
